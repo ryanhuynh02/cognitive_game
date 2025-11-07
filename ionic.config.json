@@ -1,7 +1,0 @@
-{
-  "name": "CARMEN_web_app_v2",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
