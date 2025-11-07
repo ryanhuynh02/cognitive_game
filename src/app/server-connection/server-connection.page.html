@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Server connection</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Server connection</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div class="form-container">
+    <ion-card>
+      <ion-card-content>
+        <form [formGroup]="serverDataForm" (ngSubmit)="connectServer()">
+          <ion-item>
+            <ion-input formControlName="ipAddress" label="IP Address" [clearInput]="true" labelPlacement="floating" placeholder="Enter IP Address"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input formControlName="portNumber" label="Port" [clearInput]="true" labelPlacement="floating" placeholder="Enter Port number"></ion-input>
+          </ion-item>
+          <div class="ion-padding">
+            <ion-button expand="block" type="submit" [disabled]="!serverDataForm.valid"><ion-icon name="wifi" slot="start"></ion-icon>&nbsp;Connect</ion-button>
+          </div>
+        </form>
+      </ion-card-content>
+    </ion-card>
+
+  </div>
+
+</ion-content>

@@ -1,0 +1,141 @@
+// #container {
+//   text-align: center;
+
+//   position: absolute;
+//   left: 0;
+//   right: 0;
+//   top: 50%;
+//   transform: translateY(-50%);
+// }
+
+// #container strong {
+//   font-size: 20px;
+//   line-height: 26px;
+// }
+
+// #container p {
+//   font-size: 16px;
+//   line-height: 22px;
+
+//   color: #8c8c8c;
+
+//   margin: 0;
+// }
+
+// #container a {
+//   text-decoration: none;
+// }
+
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #128a42;
+}
+
+.keyboard {
+  margin-top: 20px;
+}
+
+ion-button {
+  font-size: 1.25rem;
+}
+
+.selection-slots {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.slot {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #000;
+  border-radius: 4px;
+  background: transparent;
+  transition: background 0.2s;
+}
+
+// make that outline pill perfectly round
+ion-input.answer-box[fill="outline"] {
+  --outline-border-radius: 50px !important;
+}
+
+// turn the “remember” box into a circle
+.circle-box {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+// simple grid for the keypad
+// .keypad {
+//   display: grid;
+//   grid-template-columns: repeat(3, 60px);
+//   gap: 0.5rem;
+//   justify-content: center;
+//   margin-top: 1rem;
+// }
+
+// .keypad button {
+//   height: 60px;
+//   font-size: 1.2rem;
+// }
+
+// .keypad .delete-key {
+//   background: red;
+//   color: #fff;
+// }
+
+// .keypad {
+//   display: flex;
+//   justify-content: center;
+//   flex-wrap: wrap;
+//   gap: 1rem;
+//   margin-top: 1rem;
+// }
+
+// .keypad button {
+//   width: 80px;
+//   height: 80px;
+//   font-size: 1.4rem;
+//   border-radius: 12px;
+//   border: 1px solid #ccc;
+//   background: #f2f2f2;
+// }
+
+// .keypad button.delete {
+//   background: #e74c3c;
+//   color: white;
+//   border: none;
+// }
+
+/* home.page.scss */
+
+::ng-deep .big-alert .alert-wrapper {
+  --min-width: 400px;
+  --max-width: 500px;
+}
+
+::ng-deep .big-alert .alert-head-title {
+  font-size: 2rem;
+}
+
+::ng-deep .big-alert .alert-message {
+  font-size: 2.2rem;
+}
+
+::ng-deep .big-alert .alert-button {
+  font-size: 1.6rem;
+  padding: 0.6rem 1.2rem;
+}
+
+
+
