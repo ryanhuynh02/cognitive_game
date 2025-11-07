@@ -1,0 +1,117 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+
+body {
+  background-color: #fdf5d3; // Light beige
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.answer-box {
+  width: 200px;
+  height: 60px;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  border: 1px solid #333;
+}
+
+.submit-btn {
+  background-color: #66a6a6;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.keyboard button {
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Make the alert wrapper much wider so the message stays on one line */
+.big-alert .alert-wrapper {
+  /* you can tweak these values as you like */
+  --min-width: 400px !important;   /* force a larger minimum width with the "!important" command line */
+  --max-width: 90vw  !important;   /* cap at 90% of viewport so it never goes off‐screen */
+  /* or you can set an exact width: */
+  /* --width: 600px; */
+
+   /* bump up the alert’s title (& use !important to override) */
+  --header-font-size: 1rem !important;
+
+  /* if you want to also enlarge the message text: */
+  --message-font-size: 1.5rem !important;
+}
+
+
+
+
+
+
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+
+/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+@import "@ionic/angular/css/palettes/dark.system.css";
